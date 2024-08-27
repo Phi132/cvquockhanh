@@ -1,0 +1,93 @@
+.col-right .cv_content_title,
+.col-left #element_col_left .cv_title {
+  color: #fed703;
+}
+
+.col-right .row_content .cv_title {
+  background: linear-gradient(to right, #e81323, #d42c30, #e53e4c);
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.col-right #education_content:before,
+.col-right #experience_content:before,
+.col-right #certificate_content:before,
+.col-right #activity_content:before {
+  border-left-color: #ffd700;
+}
+
+.col-right
+  #education_content
+  .element_sub_content
+  .cv_col_left
+  #education_sub_title:not(:empty)::after,
+.col-right
+  #experience_content
+  .element_sub_content
+  .cv_col_left
+  #experience_sub_title:not(:empty)::after,
+.col-right
+  #certificate_content
+  .element_sub_content
+  #certificate_sub2_title:not(:empty)::after,
+.col-right
+  #activity_content
+  .element_sub_content
+  #activity_sub2_title:not(:empty)::after {
+  border: 2px solid #ffd700;
+  background-color: #c8102e;
+}
+
+.ratingcv .rating > span.checked:before,
+.ratingcv .rating > span.checked ~ span:before {
+  background-color: transparent; /* No need for background color anymore, stars will be handled by the `:after` pseudo-element */
+  content: none; /* Remove previous content */
+}
+
+.item-icon {
+  background-color: #c8102f;
+  border: 1px solid;
+}
+
+.cv-header {
+  /* background-image: url(images/bgheader1.png); */
+  background-image: url(./image/anhco.jpg);
+  background-size: cover;
+}
+
+.bg-footer {
+  /* background-image: url(images/bgfooter1.png); */
+  background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200610/pngtree-vietnam-flag-color-gradient-background-image_338549.jpg);
+}
+
+.cv_col_right.cv_box {
+  margin-top: -25px;
+  background: #ffffff;
+  padding: 30px 5px 10px 10px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cv-edit-title {
+  display: flex !important;
+}
+
+.element_edit_icon {
+  margin-right: 10px;
+  padding-right: 2px; /* Tăng padding để đủ chỗ cho đường thẳng */
+  position: relative; /* Đảm bảo after pseudo-element được định vị tương đối với icon */
+}
+
+.element_edit_icon::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 0.4px; /* Độ dày của đường thẳng */
+  background-color: yellow; /* Màu của đường thẳng */
+}
+
+.element_edit_icon i {
+  font-size: 16px;
+  color: #fed92f;
+}
