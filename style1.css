@@ -1,6 +1,12 @@
-.col-right .cv_content_title,
-.col-left #element_col_left .cv_title {
+.col-left #element_col_left .cv_title,
+.cv_content_title_certificate,
+.cv_content_title_activity {
   color: #fed703;
+}
+
+.col-right .cv_content_title {
+  color: #c8102f;
+  font-size: 16px;
 }
 
 .col-right .row_content .cv_title {
@@ -50,13 +56,16 @@
 
 .cv-header {
   /* background-image: url(images/bgheader1.png); */
-  background-image: url(./image/anhco.jpg);
+  background-image: url(./image/header.jpg);
   background-size: cover;
+  background-position: bottom;
 }
 
 .bg-footer {
   /* background-image: url(images/bgfooter1.png); */
-  background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200610/pngtree-vietnam-flag-color-gradient-background-image_338549.jpg);
+  background-image: url(./image/footer.jpg);
+  background-position: bottom;
+  background-size: cover;
 }
 
 .cv_col_right.cv_box {
@@ -89,5 +98,4 @@
 
 .element_edit_icon i {
   font-size: 16px;
-  color: #fed92f;
 }
